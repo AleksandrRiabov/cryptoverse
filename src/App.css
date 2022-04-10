@@ -351,6 +351,14 @@ width: 70%;
 .exchange-image{
     margin: 0px 10px !important;
 }
+.exchanges-row{
+	display: flex;
+}
+
+.exchange-cel{
+	flex: 1;
+}
+
 .search-crypto{
     margin: 20px auto 30px auto;
     width: 250px;

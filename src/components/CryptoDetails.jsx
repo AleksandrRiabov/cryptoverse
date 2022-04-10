@@ -4,11 +4,9 @@ import {useParams} from "react-router-dom";
 import millify from "millify";
 import {Col, Row, Typography, Select} from "antd";
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
-
 import {useGetCryptosDetailsQuery,useGetCryptosHistoryQuery} from "../services/cryptoApi";
-
 import LineChart from "./LineChart";
-
+import Loader from "./Loader";
 const {Title, Text} = Typography;
 const {Option} = Select;
 
@@ -20,7 +18,6 @@ const CryptoDetails = () => {
 	const {data: coinHistory} = useGetCryptosHistoryQuery({coinId, timePeriod})
 	const cryptoDetails = data ? data.data ? data.data.coin : null : null;
 	
-	console.log(coinHistory)
 	
   const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
   const stats = [
@@ -39,12 +36,10 @@ const CryptoDetails = () => {
     { title: 'Circulating Supply', value: `$ ${ cryptoDetails && cryptoDetails.supply.circulating && millify(cryptoDetails.supply.circulating)}`, icon: <ExclamationCircleOutlined /> },
   ];
 	
-	if (!cryptoDetails) {
-		return "Loading"
+	if (!cryptoDetails || isFetching) {
+		return <Loader />
 	}
-	if (isFetching) {
-		return "Loading"
-	}
+	
 	return (
 	<Col className="coin-detail-container">
 		<Col className="coin-heading-container">
