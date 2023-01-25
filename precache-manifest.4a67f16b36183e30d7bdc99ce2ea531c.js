@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cc4a69c93a928c66a121",
+    "revision": "dc66a9af0a2863d3b129",
     "url": "/cryptoverse/static/css/main.2b5d8a69.chunk.css"
   },
   {
-    "revision": "cc4a69c93a928c66a121",
-    "url": "/cryptoverse/static/js/main.cc4a69c9.chunk.js"
+    "revision": "dc66a9af0a2863d3b129",
+    "url": "/cryptoverse/static/js/main.dc66a9af.chunk.js"
   },
   {
     "revision": "bba1d855782acfa2ac18",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/cryptoverse/static/media/cryptocurrency.88532732.png"
   },
   {
-    "revision": "3b4d5e87413a4c89fba3b8ff94f13ef1",
+    "revision": "8d7b3453d6cbad100b2a7fa8dfa964d9",
     "url": "/cryptoverse/index.html"
   }
 ];
