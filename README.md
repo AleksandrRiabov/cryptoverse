@@ -27,6 +27,13 @@ Crypto Tracker is a responsive web application that allows users to view informa
 [![React HTML Parser](https://img.shields.io/badge/React_HTML_Parser-black?style=for-the-badge&logoColor=white)](#)
 
 
+## Demo
+
+⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
+
+:point_right: [Go to Cryptoverse page](https://aleksandrriabov.github.io/cryptoverse/) :point_left:
+
+⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
 ## Getting Started
 
 1. Clone the repository
